@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 98%;
+    --foreground: 220 10% 3.9%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 3.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 3.9%;
+    
+    --primary: 220 47% 28%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 220 10% 95.9%;
+    --secondary-foreground: 220 5.9% 10%;
+    
+    --muted: 220 10% 95.9%;
+    --muted-foreground: 220 3.8% 46.1%;
+    
+    --accent: 220 20% 95.9%;
+    --accent-foreground: 220 5.9% 10%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 220 5.9% 90%;
+    --input: 220 5.9% 90%;
+    --ring: 220 5.9% 10%;
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 10% 4%;
+    --foreground: 0 0% 98%;
+    
+    --card: 220 10% 6%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 220 10% 6%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 220 30% 60%;
+    --primary-foreground: 220 5.9% 10%;
+    
+    --secondary: 220 6% 10%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 220 3.7% 15.9%;
+    --muted-foreground: 220 5% 64.9%;
+    
+    --accent: 220 6% 15%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 220 3.7% 15.9%;
+    --input: 220 3.7% 15.9%;
+    --ring: 220 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+  
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-mono font-bold mb-8 relative inline-block;
+  }
+  
+  .section-title:after {
+    @apply content-[''] absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-primary via-primary/50 to-transparent;
+  }
+  
+  .tech-badge {
+    @apply px-3 py-1 rounded-full text-xs font-mono bg-primary/10 text-primary dark:bg-primary/30 dark:text-primary-foreground font-medium;
+  }
+}
+
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+section {
+  @apply py-12 md:py-16;
+}
