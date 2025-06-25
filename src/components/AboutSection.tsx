@@ -9,10 +9,11 @@ export function AboutSection() {
           <div className="md:col-span-5 lg:col-span-4 order-2 md:order-1">
             <div className="relative w-full aspect-square max-w-md mx-auto md:mx-0">
               <div className="absolute inset-0 rounded-2xl overflow-hidden border border-border">
-                {/* Add image here when available */}
-                <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/30 flex items-center justify-center text-primary font-bold text-4xl">
-                  AS
-                </div>
+                <img
+                  src="/profile-photo.jpeg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-xl flex items-center justify-center text-white">
                 <span className="font-mono text-sm">B.Tech</span>
