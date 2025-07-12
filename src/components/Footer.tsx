@@ -11,9 +11,6 @@ export function Footer() {
             <div className="text-xl font-bold">
               Portfolio<span className="text-primary">.</span>
             </div>
-            <div className="text-sm text-muted-foreground mt-1">
-              Research & Innovation
-            </div>
           </div>
           
           <div className="flex flex-col items-center md:items-end">
