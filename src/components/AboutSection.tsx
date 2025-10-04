@@ -26,7 +26,7 @@ export function AboutSection() {
 
             <div className="space-y-4 mt-6 text-muted-foreground text-[14px] leading-5 font-mono font-normal">
               <p>
-                I'm Abutalha Shaikh, a final-year Computer Science undergraduate at JSPM’s RSCOE, Pune. I specialize in developing intelligent systems using machine learning, generative AI, and backend integration techniques.
+                I’m Abutalha Shaikh, a Computer Science graduate from Pune University. I specialize in developing intelligent systems using machine learning, generative AI, and backend integration techniques.
               </p>
 
               <p>
