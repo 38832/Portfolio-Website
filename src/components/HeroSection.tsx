@@ -6,16 +6,14 @@ export function HeroSection() {
     <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-24 relative overflow-hidden">
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-6 md:space-y-8">
-          <div className="font-mono text-sm text-primary animate-fade-in mb-4">
-            Final-year CS student 
-          </div>
+
 
           <h1 className="animate-fade-in text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight font-mono">
             <span className="text-gradient-primary">Abutalha Shaikh</span>
           </h1>
 
           <p className="animate-fade-in animation-delay-100 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-mono">
-          Somehow building smart systems that don’t need sleep — but I definitely do !?.
+            Somehow building smart systems that don’t need sleep — but I definitely do !?.
           </p>
 
           <div className="animate-fade-in animation-delay-200 pt-4 flex flex-wrap justify-center gap-4">
