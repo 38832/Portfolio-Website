@@ -22,7 +22,7 @@ const projects: Project[] = [{
 }, {
   title: "Football Injury & Rehab (Physiotopia)",
   description: "Web app with injury prediction form, Gemini Chatbot for personalized rehab plans, and detailed articles.",
-  techStack: ["random forest", "large language model","typeScript", "css"],
+  techStack: ["random forest", "large language model", "typeScript", "css"],
   link: "https://physiotopia.onrender.com/" // Link for Physiotopia project
 }, {
   title: "Customer Segmentation",
@@ -32,7 +32,7 @@ const projects: Project[] = [{
 }, {
   title: "Potato Disease Classification",
   description: "CNN for plant disease detection with TensorFlow.",
-  techStack: ["tensorFlow","deep learning"],
+  techStack: ["tensorFlow", "deep learning"],
   link: "https://github.com/38832/potato_disease_classification" // Place link here
 }, {
   title: "NLP Repository",
@@ -74,7 +74,7 @@ export function ProjectsSection() {
           {projects.map((project, index) => {
             const Icon = getProjectIcon(index);
             return (
-              <Card key={index} className="glass-card backdrop-blur-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+              <Card key={index} className="glass-card hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div className="h-52 bg-gradient-to-br from-primary/5 to-primary/10 relative overflow-hidden flex items-center justify-center">
                   <Icon className="w-16 h-16 text-primary/40 group-hover:scale-110 transition-transform duration-300" />
                 </div>
